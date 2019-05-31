@@ -3,8 +3,10 @@ code to support assigmnet 3 tasks for unit SLE712
 
 
 # The code related to week 8-BLAST,(myscript.sh)
-myscript.sh is a script to incorporate mismatches with msbar into a sequence and perform a blastn search.
-This file contains codes regarding the BLAST. ms bar was used to run the blast by introducing different miss matches count starting from 200 and continue till 1220 where BLAST stopped working. Each miss match count was run 100 times to improve the accuracy and to get reliable information.
+"shell" was used to perform the blast search and to fliter the results.
+myscript.sh is a script to incorporate mismatches with msbar into a sequence and perform a blastn search. 
+This file contains codes regarding the BLAST. msbar was used mutate the sequnce in the BLAST by introducing different miss matches count starting from 200 and continue till 1220 where BLAST stopped working. Each miss match count, 100 times to improve the accuracy and to get reliable information.
+formatdb used to create own searchableb blast database from the FASTA file. blast2 used to  compares a sequences with the mutate sequnce.
 
 
 # Practical 9-Indivudal Avitivty-R Studio codes(Gene_expression and Growth_data)
