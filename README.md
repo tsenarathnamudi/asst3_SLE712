@@ -5,7 +5,7 @@ myscript.sh is a script to incorporate mismatches with msbar into a sequence and
 the miss matches changed from 200 to 1220 and ran each code 100 using the msbar
 miss matched chaged 1220, resulted n0 miss matches for 100 times.
 
-#practical 9(Gene_expression and Growth_data
+#practical 9(Gene_expression and Growth_data)
 this file contains codes which related to R studio.
 in this files consists of two parts with diffrent codes
 part A consist of codes whichused to download a .tsv file from the givel site and read the table propely. further more in this part there are codes which related to add a new row and regarding other mathematical operations such as find the row mean, odering the values according to the decending order ,counting the number of genes which follow the given instruction and creating pairs plot.
