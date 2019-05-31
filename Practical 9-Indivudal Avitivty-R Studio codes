@@ -1,0 +1,38 @@
+download.file("https://raw.githubusercontent.com/markziemann/SLE712_files/master/week10_files/gene_expression.tsv",destfile = "gene_expression.tsv")
+k<-read.table("gene_expression.tsv",header=T,row.names=1)
+str(k)
+k
+k<-as.data.frame(k)
+k$MEAN<-rowMeans(k)
+k
+s<-k[order(-k$MEAN),]
+head(s,10)
+which(k[,3]<10)
+dim((k[which(k[,3]<10),]))
+pairs(k)
+k
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+download.file("https://raw.githubusercontent.com/markziemann/SLE712_files/master/week10_files/growth_data.csv",destfile = "growth_data.csv")
+h=read.csv("https://raw.githubusercontent.com/markziemann/SLE712_files/master/week10_files/growth_data.csv")
+str(h)
+h
+xy<-subset(h,Site=="northeast")
+subset(h,Site=="northeast")
+
+mean(xy$Circumf_1999_cm)
+sd(xy$Circumf_1999_cm)
+mean(xy$Circumf_2019_cm)
+sd(xy$Circumf_2019_cm)
+
+yz<-subset(h,Site=="southwest")
+subset(h,Site=="southwest")
+
+mean(yz$Circumf_1999_cm)
+sd(yz$Circumf_1999_cm)
+mean(yz$Circumf_2019_cm)
+sd(yz$Circumf_2019_cm)
+
+boxplot(xy[,c(3,6)], xlab="YEAR" ,ylab="Circumference of the trees-xy(Northeast)")
+boxplot(yz[,c(3,6)], xlab="YEAR" ,ylab="Circumference of the trees-yz(Southwest)")
